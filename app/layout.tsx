@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 
-
-
 const inter = Inter({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -13,6 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Kuipid",
   description: "Fullstack developer specializing in web and mobile applications.",
+  icons: {
+    icon: "/images/kui.png",
+  },
 };
 
 export default function RootLayout({
@@ -22,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable}  antialiased`}
-      >
+      <body className={`${inter.variable}  antialiased`}>
         <Navbar />
         {children}
       </body>
