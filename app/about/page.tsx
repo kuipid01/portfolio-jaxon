@@ -134,7 +134,10 @@ export default function AboutPage() {
                             I&apos;m Stephen Adegoke, a fullstack software engineer focused on building reliable digital products across backend systems and frontend experiences. I care about clean architecture, smooth user flows, and software that scales with real business needs.
                         </p>
                         <div className="flex justify-center">
-                            <DarkBtn text="Hire me" />
+                            <DarkBtn
+                                text="Hire me"
+                                onClick={() => window.open("https://wa.me/2348112835593", "_blank")}
+                            />
                         </div>
                     </motion.div>
                 </div>
