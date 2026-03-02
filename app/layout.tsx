@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kuipid",
+  title: "Kuipid | Portfolio",
   description: "Fullstack developer specializing in web and mobile applications.",
   icons: {
     icon: "/images/kui.png",
